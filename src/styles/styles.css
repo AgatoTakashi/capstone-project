@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary: #495e57;
+    --secondary: #f4ce14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Markazi Text';
+}
+
+h1, .card>title, .hightlight {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p, h3, h4, .card>title {
+    font-family: 'Karla';
+}
+
+p, .card>title {
+    font-size: 18px;
+}
+
+h3, h4 {
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h4, .card>p, .hightlight {
+    font-size: 16px;
+}
+
+.card>p {
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.round1 {
+    border-radius: 16px;
+}
+
+.round2 {
+    border-radius: 8px;
+}
+
+/* Header */
+.header-container {
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin: 0 10rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    border: 1px solid rgb(0,0,0,0);
+}
+
+button:hover {
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid white;
+}
+
+/* Hero */
+.hero-container {
+    background-color: var(--primary);
+    padding: 3rem 10rem;
+}
+
+.hero-image-card {
+    position: absolute;
+    right: 10rem;
+}
+
+.hero-container img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.hero-container p {
+    max-width: 50%;
+    padding: 1rem 0;
+}
+
+/* Specials */
+.specials-container {
+    padding: 2.5rem 10rem;
+}
+
+.specials-heading {
+    padding: 2.5rem 0;
+    justify-content: space-between;
+}
+
+.specials-cards {
+
+}
+
+/* Testimonials */
+.testimonials-container {
+    background-color: var(--primary);
+    padding: 5rem 10rem;
+}
+
+/* About */
+.about-container {
+    padding: 5rem 10rem;
+}
+
+.about-container p {
+    max-width: 50%;
+    min-height: 20rem;
+}
+
+.about-container img {
+    width: 25rem;
+    position: absolute;
+}
+
+.photo1 {
+    left: 60%;
+    transform: translateY(50%);
+}
+
+.photo2 {
+    left: 70%;
+}
+
+/* Footer */
+.footer-container {
+    background: var(--primary);
+    padding: 5rem 10rem;
+    justify-content: space-between;
+}
+
+.footer-links {
+    padding: 0 5rem;
+}
+
+.footer-logo {
+    width: 10rem;
+}
