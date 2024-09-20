@@ -7,7 +7,7 @@ function TestimonialsCards() {
             <br />
             <p>Magna sint laboris veniam ex eiusmod irure nostrud et esse dolore.</p>
             <br />
-            <a>Placeholder</a>
+            <p>Placeholder</p>
         </>
     );
 }

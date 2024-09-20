@@ -7,10 +7,10 @@ function Main() {
     return (
       <>
         <main>
-          <Hero />
-          <Specials />
-          <Testimonials />
-          <About />
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <About />
         </main>
       </>
     );

@@ -5,7 +5,7 @@ import photoOne from '../images/restaurant.jpg'
 function About() {
     return (
         <>
-            <div className='about-container flex'>
+            <div id="about" className='about-container flex'>
                 <div>
                     <h2>Little Lemon</h2>
                     <h3>Chicago</h3>
@@ -14,8 +14,8 @@ function About() {
 
 Commodo pariatur commodo culpa consequat proident adipisicing sit id cillum id proident cillum. Dolor irure do et dolore eiusmod id officia ea veniam deserunt fugiat eu enim. Eu cillum dolore eu cillum duis pariatur ut. Aute consequat adipisicing ea reprehenderit amet in excepteur. Sint laborum duis cillum est reprehenderit ea aliquip aliqua veniam eu. Aute excepteur pariatur dolor ut ullamco eiusmod qui.</p>
                 </div>
-                <img src={photoOne} alt='About photo 1' className='photo1 round1' />
-                <img src={photoTwo} alt='About photo 2' className='photo2 round1'/>
+                <img src={photoOne} alt='About 1' className='photo1 round1' />
+                <img src={photoTwo} alt='About 2' className='photo2 round1'/>
             </div>
         </>
     );

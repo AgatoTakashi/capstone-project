@@ -176,3 +176,32 @@ button:hover {
 .footer-logo {
     width: 10rem;
 }
+
+.modalBack {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    background-color: none;
+    top: 5%;
+    left: 5%;
+    z-index: 1000;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-height: 90%;
+    max-width: 90%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.modal p {
+    max-width: 100%;
+}
