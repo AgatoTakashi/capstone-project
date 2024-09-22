@@ -27,7 +27,7 @@ h2 {
     font-size: 40px;
 }
 
-p, h3, h4, .card>title {
+p, h3, h4, .booking-form {
     font-family: 'Karla';
 }
 
@@ -84,14 +84,14 @@ nav ul {
     align-items: center;
 }
 
-button {
+button, #submit-button {
     padding: 1em;
     border-radius: 8px;
     background-color: var(--secondary);
     border: 1px solid rgb(0,0,0,0);
 }
 
-button:hover {
+button:hover, #submit-button:hover {
     background-color: var(--primary);
     color: white;
     border: 1px solid white;
@@ -187,6 +187,7 @@ button:hover {
     top: 5%;
     left: 5%;
     z-index: 1000;
+    backdrop-filter: blur(8px);
 }
 
 .modalContainer {
@@ -196,12 +197,35 @@ button:hover {
     align-items: flex-start;
     max-height: 90%;
     max-width: 90%;
-    background-color: white;
     padding: 3rem;
     border-radius: 5px;
     border: 1px solid var(--primary);
+    background-color: white;
 }
 
 .modal p {
     max-width: 100%;
+}
+
+.modal-title {
+    justify-content: space-between;
+}
+
+/* Booking Form */
+.booking-form {
+    display: grid; 
+    max-width: 200px; 
+    gap: 20px;
+    padding: 5rem;
+    margin: 5rem;
+    border: 1px solid black;
+}
+
+.booking-form input, select {
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#submit-button {
+    margin-top: 2rem;
 }

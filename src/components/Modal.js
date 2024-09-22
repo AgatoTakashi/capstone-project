@@ -9,7 +9,7 @@ function Menu ({ closeModal })  {
                     </p>
                 </div>
                 <button onClick={closeModal}>
-                    Close Modal
+                    Close
                 </button>
             </div>
         </div>
