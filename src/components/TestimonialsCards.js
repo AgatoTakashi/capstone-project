@@ -1,13 +1,19 @@
-function TestimonialsCards() {
+import Testimonials from "./Testimonials";
+import stars from '../images/stars.png';
+
+function TestimonialsCards(props) {
     return (
         <>
-            <h4>Placeholder</h4>
-            <br />
-            <img src="" alt="critic" />
-            <br />
-            <p>Magna sint laboris veniam ex eiusmod irure nostrud et esse dolore.</p>
-            <br />
-            <p>Placeholder</p>
+            <div className="testimonials-card">
+                <img src={stars} alt="Rating" />
+                <br />
+                <div className="img-name flex">
+                    <img src={props.testimonials.img} alt="critic" />
+                    <h2>{props.testimonials.name}</h2>
+                </div>
+                <br />
+                <p>{props.testimonials.review}</p>
+            </div>
         </>
     );
 }

@@ -5,7 +5,7 @@ function Menu ({ closeModal })  {
                 <div className="modal">
                     <h2>Sorry</h2>
                     <p>
-                        This feature has not been implemented.
+                    <br />This feature has not been implemented.<br /><br /><br />
                     </p>
                 </div>
                 <button onClick={closeModal}>

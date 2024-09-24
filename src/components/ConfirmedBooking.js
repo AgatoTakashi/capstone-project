@@ -6,11 +6,11 @@ function ConfirmedBooking ({ closeModal }) {
                     <div className="modal">
                         <h2>Thank You</h2>
                         <p>
-                            Your reservation has been comfirmed.
+                            <br />Your reservation has been comfirmed.<br /><br /><br />
                         </p>
                     </div>
                     <button onClick={closeModal}>
-                        Close Modal
+                        Close
                     </button>
                 </div>
             </div>

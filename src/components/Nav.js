@@ -11,17 +11,31 @@ function Nav() {
   const [showReservation, setShowReservation] = useState(false)
     return (
       <>
-        <nav>
+        <nav className='header-desktop'>
           <ul>
             <li><Link to='/'>Home</Link></li>
             <li><HashLink smooth to='/#about'>About</HashLink></li>
-            <li><a href="#" onClick={() => setShowModal(true)}>Menu</a>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Menu</a>
             {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
-            <li><a href="#" onClick={() => setShowReservation(true)}>Reservations</a>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowReservation(true)}>Reservations</a>
             {showReservation && <Reservations closeReservation={() => setShowReservation(false)} />}</li>
-            <li><a href="#" onClick={() => setShowModal(true)}>Order Online</a>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Order Online</a>
             {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
-            <li><a href="#" onClick={() => setShowModal(true)}>Login</a>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Login</a>
+            {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
+          </ul>
+        </nav>
+        <nav className='header-mobile'>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><HashLink smooth to='/#about'>About</HashLink></li>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Menu</a>
+            {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowReservation(true)}>Reservations</a>
+            {showReservation && <Reservations closeReservation={() => setShowReservation(false)} />}</li>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Order Online</a>
+            {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
+            <li><a href="#" aria-label="On Click" onClick={() => setShowModal(true)}>Login</a>
             {showModal && <Modal closeModal={() => setShowModal(false)} />}</li>
           </ul>
         </nav>

@@ -1,13 +1,20 @@
-function SpecialsCards() {
+function SpecialsCards(props) {
     return (
         <>
-            <img src="" alt="Daily Specials" />
+        <div className="card">
+            <img src={props.specials.img} alt="Daily Specials" />
             <br /><br />
-            <h4>Placeholder</h4>
-            <br />
-            <p>Magna sint laboris veniam ex eiusmod irure nostrud et esse dolore.</p>
-            <br />
-            <p>Placeholder</p>
+            <div className="card-text">
+                <div className="title flex">
+                    <h4 className="title">{props.specials.name}</h4>
+                    <span className="highlight"><p>{props.specials.price}</p></span>
+                </div>
+                <br />
+                <p>{props.specials.description}.</p>
+                <br />
+                <p></p>
+            </div>
+        </div>
         </>
     );
 }
